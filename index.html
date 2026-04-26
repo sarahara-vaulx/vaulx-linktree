@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaulx Store</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a0a0a;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 16px;
+  }
+  .container { width: 100%; max-width: 480px; }
+  .profile { text-align: center; margin-bottom: 28px; }
+  .avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 16px;
+    background: #000;
+    border: 1px solid #c9a84c44;
+    margin: 0 auto 14px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile h1 {
+    color: #c9a84c;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .profile p { color: #888; font-size: 13px; letter-spacing: 0.5px; }
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #c9a84c55, transparent);
+    margin: 20px 0;
+  }
+  .section-label {
+    color: #c9a84c99;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0 10px 4px;
+  }
+  .link-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: border-color 0.2s, background 0.2s, transform 0.15s;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  .link-btn:hover {
+    border-color: #c9a84c;
+    background: #1a1a1a;
+    transform: scale(1.02);
+  }
+  .link-btn:active { transform: scale(0.98); }
+  .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #1f1f1f;
+    border: 1px solid #c9a84c44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .btn-text .title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #f0f0f0;
+    letter-spacing: 0.3px;
+  }
+  .btn-text .sub {
+    font-size: 12px;
+    color: #666;
+    margin-top: 3px;
+  }
+  .arrow { margin-left: auto; color: #c9a84c; font-size: 20px; }
+  .footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #444;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+  .footer span { color: #c9a84c88; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="profile">
+    <div class="avatar">
+      <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" width="160" height="175">
+        <rect width="200" height="220" fill="#000"/>
+        <!-- S-curve swirl -->
+        <path d="M 68 80 C 68 55, 140 55, 140 80 C 140 105, 68 105, 68 130 C 68 145, 100 150, 130 143" fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- VAULX text -->
+        <text x="100" y="97" text-anchor="middle" font-family="Georgia, serif" font-size="36" font-weight="700" letter-spacing="4" fill="#c9a84c">VAULX</text>
+        <!-- Tagline — placed well below the swirl -->
+        <text x="100" y="178" text-anchor="middle" font-family="Georgia, serif" font-size="10" font-style="italic" letter-spacing="0.8" fill="#c9a84c">The finest things, delivered to you.</text>
+      </svg>
+    </div>
+    <h1>Vaulx Store</h1>
+    <p>@vaulx.by.sassy • The finest things, delivered to you.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-label">🛍️ Shop by Category</div>
+
+  <a class="link-btn" href="https://vaulx-store.vercel.app/?category=Technology" target="_blank">
+    <div class="icon">📱</div>
+    <div class="btn-text">
+      <div class="title">Technology</div>
+      <div class="sub">Gadgets & tech essentials</div>
+    </div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-btn" href="https://vaulx-store.vercel.app/?category=Home+%26+Living" target="_blank">
+    <div class="icon">🏠</div>
+    <div class="btn-text">
+      <div class="title">Home & Living</div>
+      <div class="sub">Aesthetic pieces for your space</div>
+    </div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-btn" href="https://vaulx-store.vercel.app/?category=Fashion" target="_blank">
+    <div class="icon">👗</div>
+    <div class="btn-text">
+      <div class="title">Fashion</div>
+      <div class="sub">Handpicked style finds</div>
+    </div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-btn" href="https://vaulx-store.vercel.app/?category=Beauty" target="_blank">
+    <div class="icon">💄</div>
+    <div class="btn-text">
+      <div class="title">Beauty</div>
+      <div class="sub">Skincare & makeup must-haves</div>
+    </div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-btn" href="https://vaulx-store.vercel.app/?category=Health" target="_blank">
+    <div class="icon">💊</div>
+    <div class="btn-text">
+      <div class="title">Health</div>
+      <div class="sub">Wellness & self-care picks</div>
+    </div>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="link-btn" href="https://vaulx-store.vercel.app/?category=Kitchen" target="_blank">
+    <div class="icon">🍳</div>
+    <div class="btn-text">
+      <div class="title">Kitchen</div>
+      <div class="sub">Cook & entertain in style</div>
+    </div>
+    <span class="arrow">›</span>
+  </a>
+
+  <div class="section-label">✦ Browse All</div>
+
+  <a class="link-btn" href="https://vaulx-store.vercel.app/" target="_blank">
+    <div class="icon">🛒</div>
+    <div class="btn-text">
+      <div class="title">Visit Vaulx Store</div>
+      <div class="sub">Handpicked products across every category</div>
+    </div>
+    <span class="arrow">›</span>
+  </a>
+
+  <div class="divider"></div>
+
+  <div class="footer">Links may be affiliate links • <span>Thank you for the support! ✦</span></div>
+</div>
+</body>
+</html>
